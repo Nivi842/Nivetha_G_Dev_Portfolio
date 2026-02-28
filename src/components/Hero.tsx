@@ -17,7 +17,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="font-[family-name:var(--font-heading)] text-primary text-sm tracking-widest uppercase mb-4">
-            Backend Engineer
+            Software Engineer — Backend
           </p>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 font-[family-name:var(--font-heading)]">
             Nivetha <span className="text-gradient">G</span>
