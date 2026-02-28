@@ -1,41 +1,21 @@
 import { motion } from "framer-motion";
-import { Send, Terminal, Sparkles, Loader2 } from "lucide-react";
+import { Send, Terminal, Sparkles } from "lucide-react";
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<"message" | "coffee">("message");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    
-    const { error } = await supabase.from("contact_messages").insert({
-      name,
-      email,
-      message,
-      message_type: activeTab,
-    });
-
-    setLoading(false);
-
-    if (error) {
-      toast.error("Failed to send message. Please try again.");
-      return;
-    }
-
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    setTimeout(() => setSubmitted(false), 3000);
     setName("");
     setEmail("");
     setMessage("");
-    toast.success("Message sent successfully!");
   };
 
   return (
@@ -156,10 +136,9 @@ const ContactSection = () => {
                 />
                 <button
                   type="submit"
-                  disabled={loading}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold font-[family-name:var(--font-heading)] bg-primary text-primary-foreground hover:opacity-90 transition-opacity glow-shadow disabled:opacity-50"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold font-[family-name:var(--font-heading)] bg-primary text-primary-foreground hover:opacity-90 transition-opacity glow-shadow"
                 >
-                  {loading ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
+                  <Send size={16} />
                   {activeTab === "coffee" ? "Send Invite" : "Send Message"}
                 </button>
               </form>
