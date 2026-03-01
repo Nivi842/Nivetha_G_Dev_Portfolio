@@ -4,7 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "Nivetha_G_Dev_Portfolio",   // ⭐ IMPORTANT FIX
+
+  base: "./",
 
   server: {
     host: "::",
