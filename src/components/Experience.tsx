@@ -2,28 +2,32 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    company: "OpalMinds IT Solution Pvt Ltd",
+    company: "OpalMinds IT Solution Private Ltd",
     role: "Contract Software Engineer",
     period: "Nov 2025 – Dec 2025",
     location: "Remote",
     highlights: [
-      "Designed cloud-native Microservices platform using Java & Spring Boot for import/export permit workflows.",
-      "Developed role-based Admin and User portals with secure submissions and request tracking.",
-      "Built request orchestration layer transforming structured form data into SDK-compliant XML payloads.",
-      "Deployed on AWS with PostgreSQL, centralized logging, and monitoring.",
+      "Designed and deployed a cloud-native Microservices platform using Java and Spring Boot to automate import/export permit workflows.",
+      "Developed role-based Admin and User portals, enabling secure submissions, request tracking, and operational visibility.",
+      "Designed a robust request orchestration layer to validate and transform structured form data into SDK-compliant XML payloads.",
+      "Integrated with external SDK-driven systems using resilient communication patterns and error handling for reliable request delivery.",
+      "Deployed services on AWS with PostgreSQL, implementing centralized logging and monitoring for production-grade stability.",
+      "Managed end-to-end SDLC, translating complex logistics requirements into scalable backend solutions from design to deployment.",
     ],
   },
   {
-    company: "Amdocs India Pvt Ltd",
+    company: "Amdocs India Private Ltd",
     role: "Experienced Software Developer",
     period: "Aug 2023 – Sep 2025",
     location: "Pune, India",
     highlights: [
-      "Implemented Hybrid Disaster Recovery on AWS EKS across 70+ microservices — 99.9% uptime.",
-      "Led SDK compatibility initiative across 70+ microservices with zero production incidents.",
-      "Automated Kafka DLQ processing — recovered 100% failed messages, reduced manual work by 40%.",
-      "Drove PMX version upgrade across 70+ microservices — improved DevOps efficiency by 25%.",
-      "Delivered 5+ end-to-end backend features — reduced production bug rates by 20%.",
+      "Implemented and maintained a Hybrid Disaster Recovery (DR) solution on AWS EKS across 70+ microservices, enabling automated failover and health checks — ensured 99.9% service uptime.",
+      "Led SDK compatibility initiative across 70+ microservices, resolving version conflicts and dependency issues with zero production incidents.",
+      "Automated Kafka Dead Letter Queue processing with idempotent consumers and retry mechanisms — recovered 100% failed messages, reduced manual intervention by 40%.",
+      "Drove PMX version upgrade across 70+ microservices, standardizing build configurations and eliminating environment-specific failures — improved DevOps efficiency by 25%.",
+      "Integrated Liquibase for PostgreSQL schema migrations across 6+ environments, eliminating manual database scripts and improving deployment consistency.",
+      "Applied AI-assisted development tools for code generation and refactoring — increased coding efficiency by 30% while maintaining code quality.",
+      "Delivered 5+ end-to-end backend features for telecom order management with comprehensive testing and code reviews — reduced production bug rates by 20%.",
     ],
   },
 ];
