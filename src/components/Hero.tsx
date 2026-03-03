@@ -59,10 +59,10 @@ const Hero = () => {
           <span className="flex items-center gap-2">
             <MapPin size={16} /> Chennai, Tamil Nadu
           </span>
-          <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors">
+          <a href="https://www.linkedin.com/in/nivetha-g-b287871b9/" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Linkedin size={16} /> LinkedIn
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors">
+          <a href="https://github.com/Nivi842" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Github size={16} /> GitHub
           </a>
         </motion.div>
